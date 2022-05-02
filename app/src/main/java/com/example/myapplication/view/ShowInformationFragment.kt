@@ -46,10 +46,10 @@ class ShowInformationFragment : Fragment() {
 
     private fun getInformationAndSet() {
 
-        binding.tvName.text = sp.getString("name","")
-        binding.tvFather.text = sp.getString("fathersName","")
-        binding.tvPhone.text = sp.getString("phone","")
-        binding.tvPost.text = sp.getString("postCode","")
+        binding.tvName.setText(sp.getString("name",""))
+        binding.tvFather.setText(sp.getString("fathersName",""))
+        binding.tvPhone.setText(sp.getString("phone",""))
+        binding.tvPost.setText(sp.getString("postCode",""))
 
     }
 

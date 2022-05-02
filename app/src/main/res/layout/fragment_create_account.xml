@@ -1,50 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editTextAccountNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:hint="شماره کارت"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextAccountType"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextMojodi"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextMojodi"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextMojodi"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:hint="موجودی"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextAccountType"
-        app:layout_constraintEnd_toEndOf="@+id/editTextAccountType"
-        app:layout_constraintStart_toStartOf="@+id/editTextAccountType"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAccountNum" />
+        android:hint="Account Number:"
+        android:inputType="text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:singleLine="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextAccountNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account Inventory:"
+        android:inputType="text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:singleLine="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextMojodi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account Type:"
+        android:inputType="text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:padding="5dp"
+        android:singleLine="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextAccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editTextAccountType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:hint="نوع حساب"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -58,10 +67,7 @@
         android:id="@+id/buttonSet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ثبت اکانت"
+        android:text="Add Account"
         android:layout_marginHorizontal="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginVertical="45dp" />
+</LinearLayout>
