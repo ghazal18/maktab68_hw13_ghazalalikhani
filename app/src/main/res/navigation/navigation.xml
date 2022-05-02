@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/createAccountFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myapplication.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_showInformationFragment"
+            app:destination="@id/showInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showInformationFragment"
+        android:name="com.example.myapplication.ShowInformationFragment"
+        android:label="fragment_show_information"
+        tools:layout="@layout/fragment_show_information" >
+        <action
+            android:id="@+id/action_showInformationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.myapplication.CreateAccountFragment"
+        android:label="CreateAccountFragment" />
+    <fragment
+        android:id="@+id/showAccountFragment"
+        android:name="com.example.myapplication.view.ShowAccountFragment"
+        android:label="ShowAccountFragment" />
+    <fragment
+        android:id="@+id/selectAccountFragment"
+        android:name="com.example.myapplication.view.SelectAccountFragment"
+        android:label="fragment_select_account"
+        tools:layout="@layout/fragment_select_account" />
+</navigation>

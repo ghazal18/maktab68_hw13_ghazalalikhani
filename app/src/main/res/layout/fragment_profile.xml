@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:padding="10sp"
+            android:text="اطلاعات کاربری"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="8000000"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:padding="8sp"
+                android:text="نام و نام خانوادگی:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextFather"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="8000000"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:padding="8sp"
+                android:text="نام پدر:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="8000000"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:padding="8sp"
+                android:text="شماره تلفن:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextPostID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="8000000"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:padding="8sp"
+                android:text="کدپستی:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="8000000"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:padding="8sp"
+                android:text="تعداد حساب:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/setInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22sp"
+            android:textSize="20sp"
+            android:text="ثبت اطلاعات"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

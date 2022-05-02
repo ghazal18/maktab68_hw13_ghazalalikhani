@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_createAccount"
+            android:title="Create Account" />
+        <item
+            android:id="@+id/nav_showAccount"
+            android:title="Show Account" />
+        <item
+            android:id="@+id/nav_selectAccount"
+            android:title="Select Account" />
+        <item
+            android:id="@+id/nav_deleteAll"
+            android:title="Delete All" />
+    </group>
+</menu>
