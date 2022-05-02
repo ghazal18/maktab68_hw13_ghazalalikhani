@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:textSize="25sp"
+            android:textSize="22sp"
+            android:padding="8dp"
             android:text="@{account.accountType}" />
         <TextView
             android:id="@+id/tv_accountNumber"
@@ -26,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:textSize="25sp"
+            android:textSize="22sp"
+            android:padding="8dp"
             android:text="@{String.valueOf(account.accountNumber)}" />
 
 
