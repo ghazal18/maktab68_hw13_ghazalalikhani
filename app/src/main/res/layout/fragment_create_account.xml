@@ -69,5 +69,6 @@
         android:layout_height="wrap_content"
         android:text="Add Account"
         android:layout_marginHorizontal="45dp"
-        android:layout_marginVertical="45dp" />
+        android:layout_marginVertical="45dp"
+        style="?attr/materialButtonOutlinedStyle"/>
 </LinearLayout>

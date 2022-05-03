@@ -34,6 +34,7 @@ class ShowAccountFragment : Fragment() {
         val adapter = UserAccountAdapter()
         viewModel.getAllAccounts().observe(viewLifecycleOwner) {
             if (it != null) {
+                binding.lifecycleOwner = viewLifecycleOwner
                 binding.accountRv.adapter = adapter
                 adapter.submitList(it)
             }
